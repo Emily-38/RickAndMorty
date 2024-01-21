@@ -53,8 +53,7 @@ function createNav(prev, next) {
 
 async function displayCharacter(id) {
   //appelle personnage
-  const reponse = await fetch(
-    `https://rickandmortyapi.com/api/character/${id}`
+  const reponse = await fetch(`https://rickandmortyapi.com/api/character/${id}`
   );
   const characters = await reponse.json();
 
